@@ -52,8 +52,6 @@ def prediction():
                 upper_bound: Upper bound of confidence interval.
             """
             tree_predictions = np.array([tree.predict(X) for tree in model.estimators_])
-
-            # Calculate mean prediction and confidence interval bounds
             mean_prediction = tree_predictions.mean(axis=0)
             lower_bound = np.percentile(tree_predictions, (1 - confidence) / 2 * 100, axis=0)
             upper_bound = np.percentile(tree_predictions, (1 + confidence) / 2 * 100, axis=0)
