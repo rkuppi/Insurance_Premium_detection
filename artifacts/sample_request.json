@@ -1,0 +1,11 @@
+{
+    "Age": 20, 
+    "Diabetes": 0,
+    "BloodPressureProblems": 0,
+    "AnyTransplants": 0,
+    "AnyChronicDiseases": 0,
+    "Height": 166,
+    "Weight": 88,
+    "HistoryOfCancerInFamily":0,
+    "NumberOfMajorSurgeries": 0    
+}
