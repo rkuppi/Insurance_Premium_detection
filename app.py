@@ -61,9 +61,9 @@ def prediction():
             return mean_prediction[0], lower_bound[0], upper_bound[0]
         result = model.predict(features_array) 
         mean_pred, lower_ci, upper_ci = predict_confidence(model, features_array)
-        return {"Predicted insurance price": result[0],
-                "95% Prediction Interval": (lower_ci, upper_ci),
-                "Mean Prediction": mean_pred}
+        return {"Predicted insurance price": round(result[0], 2),
+                "95% Prediction Interval": (round(lower_ci, 2), round(upper_ci, 2))
+                }
     except Exception as e:
         return jsonify({
             "error": str(e)
