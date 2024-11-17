@@ -105,3 +105,7 @@ Started with basic Linear regression to complex neural network, the decision tre
 - This will return the JSON with Predicted insurance premium price and **95% confidence** interval for the prediction made
 
 ![alt text](/artifacts/prediction.png)
+
+# References
+- You can find video expaination of the project [here](https://www.loom.com/share/20ae89bbf6eb40e0941b3003f522a555).
+- Please go through medium by clicking [here](https://medium.com/@ravitejareddy.kuppireddy/health-insurance-cost-prediction-using-ml-1b406be63d49)
